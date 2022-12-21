@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
 
   <section class="portfolio">
     <div class="container">
-        <h1 class="portfolio__title is-hidden">Портфоліо</h1>
+        <h1 class="portfolio__title visually-hidden">Портфоліо</h1>
         <ul class="filtr__list">
             <li class="filtr__item"><button class="filtr__btn" type="button">Усі</button></li>
             <li class="filtr__item"><button class="filtr__btn" type="button">Веб-сайти</button></li>
@@ -196,31 +196,38 @@
     
             <div class="join">
                 <p class="join__text">Приєднуйтесь</p>
-                <ul class="social list">
+                <ul class="social__list">
                     <li class="social__items">
-                        <a href="#" class="social__link link">
+                        <a href="#" class="social__link social__link--footer">
                             <svg width="20" height="20" class="instagram icon">
                                 <use href="./img/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social__items"><a href="#" class="social__link link">
+                    <li class="social__items">
+                        <a href="#" class="social__link social__link--footer">
                             <svg width="20" height="20" class="twitter icon">
                                 <use href="./img/icons.svg#icon-twitter"></use>
                             </svg>
-                        </a></li>
-                    <li class="social__items"><a href="#" class="social__link link">
+                        </a>
+                    </li>
+                    <li class="social__items">
+                        <a href="#" class="social__link social__link--footer">
                             <svg width="20" height="20" class="facebook icon">
                                 <use href="./img/icons.svg#icon-facebook"></use>
                             </svg>
-                        </a></li>
-                    <li class="social__items"><a href="#" class="social__link link">
+                        </a>
+                    </li>
+                    <li class="social__items">
+                        <a href="#" class="social__link social__link--footer">
                             <svg width="20" height="20" class="linkedin icon">
                                 <use href="./img/icons.svg#icon-linkedin"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
             </div>
+
     
             <!-- footer-form -->
             <form class="footer-form">

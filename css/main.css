@@ -1,21 +1,4 @@
 @charset "UTF-8";
-:root {
-  --primary-text-color: #212121;
-  --second-text-color: #757575;
-  --primary-white-color: #FFFFFF;
-  --accent-color: #2196F3;
-  --logo-color: #000000;
-  --icon-teams-color: #AFB1B8;
-  --footer-address-color: rgba(255, 255, 255, 0.6);
-  --background-body-color: #FFFFFF;
-  --background-hero-color: #C4C4C4;
-  --background-teams-color: #F5F4FA;
-  --background-footer-color: #2F303A;
-  --border-color: #ECECEC;
-  --portfolio-gallery-info-border-color: #EEEEEE;
-  --hover-button-color: #188CE8;
-}
-
 p,
 h1,
 h2,
@@ -50,26 +33,6 @@ body {
   margin: 0;
 }
 
-.container {
-  width: 1200px;
-  padding: 0px 15px;
-  margin: 0 auto;
-}
-
-.is-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -84,7 +47,41 @@ a {
   text-decoration: none;
 }
 
-/*-----header-----*/
+:root {
+  --primary-text-color: #212121;
+  --second-text-color: #757575;
+  --primary-white-color: #FFFFFF;
+  --accent-color: #2196F3;
+  --logo-color: #000000;
+  --icon-teams-color: #AFB1B8;
+  --footer-address-color: rgba(255, 255, 255, 0.6);
+  --background-body-color: #FFFFFF;
+  --background-hero-color: #C4C4C4;
+  --background-teams-color: #F5F4FA;
+  --background-footer-color: #2F303A;
+  --border-color: #ECECEC;
+  --portfolio-gallery-info-border-color: #EEEEEE;
+  --hover-button-color: #188CE8;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
 header .container {
   display: flex;
   align-items: center;
@@ -198,7 +195,6 @@ header .container {
   margin-right: 50px;
 }
 
-/* --hero-- */
 .hero {
   margin: 0 auto;
   text-align: center;
@@ -243,7 +239,6 @@ header .container {
   background-color: var(--hover-button-color);
 }
 
-/* --benefits--*/
 .benefits__list {
   display: flex;
 }
@@ -286,7 +281,6 @@ header .container {
   color: var(--second-text-color);
 }
 
-/* --about-- */
 .about.no-padding-top {
   padding-top: 0;
 }
@@ -329,7 +323,6 @@ header .container {
   padding: 27px 0;
 }
 
-/* --teams-- */
 .teams {
   background: var(--background-teams-color);
 }
@@ -420,7 +413,6 @@ header .container {
   background-color: var(--accent-color);
 }
 
-/* -- Постійні клієнти -- */
 .regular-customers__title {
   font-weight: 700;
   font-size: 36px;
@@ -470,7 +462,6 @@ header .container {
   border-color: var(--accent-color);
 }
 
-/* --footer-- */
 .footer {
   background: var(--background-footer-color);
   padding: 60px 0;
@@ -534,7 +525,6 @@ header .container {
   color: var(--accent-color);
 }
 
-/* footer-join */
 .join {
   display: inline-block;
   margin-left: 70px;
@@ -561,7 +551,6 @@ header .container {
   background-color: var(--accent-color);
 }
 
-/* footer-form */
 .footer-form {
   margin-left: auto;
 }
@@ -626,7 +615,6 @@ header .container {
   margin-left: 10px;
 }
 
-/* --backdrop-- */
 .backdrop {
   position: fixed;
   top: 0;
@@ -832,7 +820,6 @@ header .container {
   background-color: var(--hover-button-color);
 }
 
-/* --portfolio-- */
 .filtr__list {
   display: flex;
   justify-content: center;
@@ -927,4 +914,16 @@ h2 {
 
 .gallery__title {
   margin-bottom: 4px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*-----header-----*/
+/* --hero-- */
+/* --benefits--*/
+/* --about-- */
+/* --teams-- */
+/* -- Постійні клієнти -- */
+/* --footer-- */
+/* footer-join */
+/* footer-form */
+/* --backdrop-- */
+/* --portfolio-- *//*# sourceMappingURL=main.css.map */
